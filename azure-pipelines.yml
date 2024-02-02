@@ -15,9 +15,9 @@ steps:
   inputs:
     gradleBuildFile: 'build.gradle'
     tasks: 'artifactoryPublish'
-    artifactoryResolverService: 'Artifactorytest'
+    artifactoryResolverService: 'artifactory1'
     sourceRepo: 'pipelines-tasks-virtual'
-    artifactoryDeployerService: 'Artifactorytest'
+    artifactoryDeployerService: 'artifactory1'
     targetRepo: 'pipelines-tasks-virtual'
     usesPlugin: true
     useWrapper: true
