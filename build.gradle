@@ -31,7 +31,7 @@ allprojects {
         maven {
             url "https://hts2.jfrog.io/artifactory/ganaviazure-gradle-dev"
             credentials {
-                username = "ganavitest"
+                username = "ganaviktest"
                 password = "Password1*"
             }
         }
