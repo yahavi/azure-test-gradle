@@ -15,10 +15,10 @@ steps:
   inputs:
     gradleBuildFile: 'build.gradle'
     tasks: 'artifactoryPublish'
-    artifactoryResolverService: 'artifactory1'
-    sourceRepo: 'pipelines-tasks-virtual'
-    artifactoryDeployerService: 'artifactory1'
-    targetRepo: 'pipelines-tasks-virtual'
+    artifactoryResolverService: 'Artifactorytest'
+    sourceRepo: 'ganaviazure-gradle-dev'
+    artifactoryDeployerService: 'Artifactorytest'
+    targetRepo: 'ganaviazure-gradle-dev'
     usesPlugin: true
     useWrapper: true
     collectBuildInfo: true
