@@ -29,7 +29,7 @@ allprojects {
     status = 'Integration'
     repositories {
         maven {
-            url "https://hts2.jfrog.io/artifactory/pipelines-tasks-virtual"
+            url "https://hts2.jfrog.io/artifactory/ganaviazure-gradle-dev"
             credentials {
                 username = "ganavitest"
                 password = "Password1*"
