@@ -25,3 +25,9 @@ steps:
     buildName: '$(Build.DefinitionName)'
     buildNumber: '$(Build.BuildNumber)'
     javaHomeOption: 'JDKVersion'
+
+- task: JFrogPublishBuildInfo@1
+  inputs:
+    artifactoryConnection: 'Artifactorytest'
+    buildName: '$(Build.DefinitionName)'
+    buildNumber: '$(Build.BuildNumber)'
