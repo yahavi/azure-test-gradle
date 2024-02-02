@@ -29,7 +29,10 @@ allprojects {
     status = 'Integration'
     repositories {
         maven {
-            url "http://127.0.0.1:8081/artifactory/libs-release"
+            url "https://hts2.jfrog.io/artifactory/pipelines-tasks-virtual"
+            credentials {
+                username = "ganavitest"
+                password = "Password1*"
         }
     }
 }
