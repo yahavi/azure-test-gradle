@@ -33,6 +33,7 @@ allprojects {
             credentials {
                 username = "ganavitest"
                 password = "Password1*"
+            }
         }
     }
 }
