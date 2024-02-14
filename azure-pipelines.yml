@@ -19,9 +19,10 @@ steps:
     sourceRepo: 'ganaviazure-gradle-dev'
     artifactoryDeployerService: 'Artifactorytest'
     targetRepo: 'ganaviazure-gradle-dev-local'
-    usesPlugin: false
+    usesPlugin: true
     useWrapper: true
     collectBuildInfo: true
     buildName: '$(Build.DefinitionName)'
     buildNumber: '$(Build.BuildNumber)'
     javaHomeOption: 'JDKVersion'
+    
