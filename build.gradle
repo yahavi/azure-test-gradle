@@ -28,7 +28,6 @@ allprojects {
     version = currentVersion
     status = 'Integration'
     repositories {
-        maven {
             mavenCentral()
         }
             
