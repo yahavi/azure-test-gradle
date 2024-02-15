@@ -90,6 +90,15 @@ artifactory {
     clientConfig.info.addEnvironmentProperty('test.adding.dynVar',new java.util.Date().toString())
 
     contextUrl = 'http://127.0.0.1:8081/artifactory'
+       resolve {
+        repository {
+            repoKey = 'ganaviazure-gradle-dev'
+            username = "${artifactory_user}"
+            password = "${artifactory_password}"
+            maven = true
+            
+        }
+    }
     publish {
         repository {
             repoKey = 'libs-snapshot-local' // The Artifactory repository key to publish to
