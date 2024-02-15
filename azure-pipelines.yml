@@ -21,7 +21,7 @@ steps:
     sourceRepo: 'ganaviazure-gradle-dev'
     artifactoryDeployerService: 'Artifactorytest'
     targetRepo: 'ganaviazure-gradle-dev-local'
-    usesPlugin: true
+    usesPlugin: false
     useWrapper: true
     collectBuildInfo: true
     buildName: '$(Build.DefinitionName)'
