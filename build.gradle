@@ -45,7 +45,6 @@ configure(javaProjects()) {
     dependencies {
         testImplementation 'junit:junit:4.7'
         implementation group: 'log4j', name: 'log4j', version: '1.2.17'
-        implementation "cz.skodaauto.ecmr:core:${vModuleCore}"
         implementation 'org.springframework.boot:spring-boot-starter-web'
         implementation 'org.springframework.boot:spring-boot-starter-actuator'
         implementation 'org.springframework.boot:spring-boot-starter-security'
