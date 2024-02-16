@@ -18,9 +18,9 @@ steps:
     gradleBuildFile: 'build.gradle'
     tasks: 'artifactoryPublish'
     artifactoryResolverService: 'Artifactorytest'
-    sourceRepo: 'ganaviazure-gradle-dev'
+    sourceRepo: 'ganavi-gradle-dev'
     artifactoryDeployerService: 'Artifactorytest'
-    targetRepo: 'ganaviazure-gradle-dev-local'
+    targetRepo: 'ganavi-gradle-dev-local'
     usesPlugin: false
     useWrapper: true
     collectBuildInfo: true
