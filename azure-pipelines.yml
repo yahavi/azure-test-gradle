@@ -16,7 +16,7 @@ steps:
 - task: JFrogGradle@1
   inputs:
     gradleBuildFile: 'build.gradle'
-    tasks: 'artifactoryPublish'
+    tasks: 'artifactoryResolve'
     artifactoryResolverService: 'anony1'
     sourceRepo: 'ganavi-gradle-dev'
     artifactoryDeployerService: 'anony1'
