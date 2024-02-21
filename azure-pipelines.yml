@@ -20,7 +20,7 @@ steps:
     artifactoryResolverService: 'anony1'
     sourceRepo: 'ganavi-gradle-dev'
     artifactoryDeployerService: 'anony1'
-    targetRepo: 'ganavi-gradle-dev-local'
+    targetRepo: 'ganavi-gradle-dev'
     usesPlugin: false
     useWrapper: true
     collectBuildInfo: true
