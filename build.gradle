@@ -27,7 +27,7 @@ allprojects {
     status = 'Integration'
     repositories {
               maven {
-            url "https://pipeline1.jfrog.io/artifactory/ganaviazure-gradle-dev"
+            url "https://pipeline1.jfrog.io/artifactory/ganavi-gradle-release"
             credentials {
                 username = "ganavitest1"
                 password = "Password1*"
