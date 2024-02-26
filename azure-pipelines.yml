@@ -21,7 +21,7 @@ steps:
     sourceRepo: 'ganavi-gradle-release'
     artifactoryDeployerService: 'anony1'
     targetRepo: 'ganavi-gradle-release-local'
-    usesPlugin: true
+    usesPlugin: false
     useWrapper: true
     collectBuildInfo: true
     buildName: '$(Build.DefinitionName)'
