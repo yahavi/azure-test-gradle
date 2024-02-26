@@ -22,7 +22,6 @@ def javaProjects() {
 }
 
 allprojects {
-    apply plugin: 'com.jfrog.artifactory'
     group = 'org.jfrog.test.gradle.publish'
     version = currentVersion
     status = 'Integration'
