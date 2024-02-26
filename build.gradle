@@ -24,9 +24,9 @@ def javaProjects() {
 
 allprojects {
     // apply plugin: 'com.jfrog.artifactory'
-    // group = 'org.jfrog.test.gradle.publish'
-    // version = currentVersion
-    // status = 'Integration'
+     group = 'org.jfrog.test.gradle.publish'
+     version = currentVersion
+     status = 'Integration'
     repositories {
               maven {
                    mavenCentral()
