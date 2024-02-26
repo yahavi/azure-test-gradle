@@ -15,7 +15,7 @@
  */
 
 plugins {
-     id("com.jfrog.artifactory") version "5.+"
+     // id("com.jfrog.artifactory") version "5.+"
 }
 
 def javaProjects() {
@@ -23,17 +23,18 @@ def javaProjects() {
 }
 
 allprojects {
-    apply plugin: 'com.jfrog.artifactory'
-    group = 'org.jfrog.test.gradle.publish'
-    version = currentVersion
-    status = 'Integration'
+    // apply plugin: 'com.jfrog.artifactory'
+    // group = 'org.jfrog.test.gradle.publish'
+    // version = currentVersion
+    // status = 'Integration'
     repositories {
               maven {
-            url "https://pipeline1.jfrog.io/artifactory/ganavi-gradle-release"
-            credentials {
-                username = "ganavitest1"
-                password = "Password1*"
-            }
+                   mavenCentral()
+            // url "https://pipeline1.jfrog.io/artifactory/ganavi-gradle-release"
+            // credentials {
+            //     username = "ganavitest1"
+            //     password = "Password1*"
+            // }
         }
     }
 }
@@ -101,17 +102,17 @@ artifactory {
     contextUrl = 'http://127.0.0.1:8081/artifactory'
     
     publish {
-        repository {
-            repoKey = 'libs-snapshot-local' // The Artifactory repository key to publish to
-            username = "${artifactory_user}" // The publisher user name
-            password = "${artifactory_password}" // The publisher password
-            // This is an optional section for configuring Ivy publication (when publishIvy = true).
-            ivy {
-              ivyLayout = '[organization]/[module]/ivy-[revision].xml'
-              artifactLayout = '[organization]/[module]/[revision]/[module]-[revision](-[classifier]).[ext]'
-              mavenCompatible = true //Convert any dots in an [organization] layout value to path separators, similar to Maven's groupId-to-path conversion. True if not specified
-            }
-        }
+        // repository {
+        //     repoKey = 'libs-snapshot-local' // The Artifactory repository key to publish to
+        //     username = "${artifactory_user}" // The publisher user name
+        //     password = "${artifactory_password}" // The publisher password
+        //     // This is an optional section for configuring Ivy publication (when publishIvy = true).
+        //     ivy {
+        //       ivyLayout = '[organization]/[module]/ivy-[revision].xml'
+        //       artifactLayout = '[organization]/[module]/[revision]/[module]-[revision](-[classifier]).[ext]'
+        //       mavenCompatible = true //Convert any dots in an [organization] layout value to path separators, similar to Maven's groupId-to-path conversion. True if not specified
+        //     }
+        // }
         defaults {
             // Reference to Gradle publications defined in the build script.
             // This is how we tell the Artifactory Plugin which artifacts should be
