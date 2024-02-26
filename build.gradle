@@ -28,7 +28,6 @@ allprojects {
      version = currentVersion
      status = 'Integration'
     repositories {
-              maven {
                    mavenCentral()
             // url "https://pipeline1.jfrog.io/artifactory/ganavi-gradle-release"
             // credentials {
@@ -36,7 +35,6 @@ allprojects {
             //     password = "Password1*"
             // }
         }
-    }
 }
 
 // Setting this property to true will make the artifactoryPublish task
