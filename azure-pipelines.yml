@@ -18,9 +18,9 @@ steps:
     gradleBuildFile: 'build.gradle'
     tasks: 'artifactoryPublish'
     artifactoryResolverService: 'ecosys'
-    sourceRepo: 'ganavi-gradle-release'
+    sourceRepo: 'libs-release'
     artifactoryDeployerService: 'ecosys'
-    targetRepo: 'ganavi-gradle-release-local'
+    targetRepo: 'libs-release-local'
     usesPlugin: false
     useWrapper: true
     collectBuildInfo: true
