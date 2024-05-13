@@ -4,8 +4,11 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-trigger:
-- main
+trigger: none
+
+pool:
+  vmImage: ubuntu-latest
+  
 variables:
  JFROG_CLI_LOG_LEVEL: 'DEBUG'
 
