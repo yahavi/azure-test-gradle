@@ -17,9 +17,9 @@ steps:
   inputs:
     gradleBuildFile: 'build.gradle'
     tasks: 'artifactoryPublish'
-    artifactoryResolverService: 'anony1'
+    artifactoryResolverService: 'ecosys'
     sourceRepo: 'ganavi-gradle-release'
-    artifactoryDeployerService: 'anony1'
+    artifactoryDeployerService: 'ecosys'
     targetRepo: 'ganavi-gradle-release-local'
     usesPlugin: false
     useWrapper: true
