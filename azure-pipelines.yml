@@ -17,9 +17,9 @@ steps:
   inputs:
     gradleBuildFile: 'build.gradle'
     tasks: 'artifactoryPublish'
-    artifactoryResolverService: 'ecosys'
+    artifactoryResolverService: 'ecosys-artifactory'
     sourceRepo: 'libs-release'
-    artifactoryDeployerService: 'ecosys'
+    artifactoryDeployerService: 'ecosys-artifactory'
     targetRepo: 'libs-release-local'
     usesPlugin: false
     useWrapper: true
